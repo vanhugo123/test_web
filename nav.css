@@ -2,12 +2,13 @@
 html{
     background-color: rgb(248, 215, 174);
     margin: auto;
+    width: 100%;
 }
 body.container{
     font-family: Courier, monospace;
     max-width: 1500px;
     padding: 0;
-
+    margin: auto;
 }
 nav{
     display: flex;
@@ -19,7 +20,7 @@ nav{
 
 }
 nav .logo-nav{
-    background-image: url(img/logo_brand.png);
+    background-image: url(/thanh_phan_ZenLife/img/logo_brand.png);
     height: 44px;
     width: 44px;
     border: 0.01px solid #ffffff;
@@ -88,13 +89,13 @@ nav .buy-btn:hover{
 }
 
 .item-1{
-    background-image: url(img/canh_hien_nha_ngam_ho_ca.jpg);
+    background-image: url(/thanh_phan_ZenLife/img/canh_hien_nha_ngam_ho_ca.jpg);
 }
 .item-2{
-    background-image: url(img/truc_dien_cho_ngoi_ngam_san.jpg);
+    background-image: url(/thanh_phan_ZenLife/img/truc_dien_cho_ngoi_ngam_san.jpg);
 }
 .item-3{
-    background-image: url(img/canh_nha.jpg);
+    background-image: url(/thanh_phan_ZenLife/img/canh_nha.jpg);
 }
 
 .qc_content{
@@ -124,7 +125,7 @@ nav .buy-btn:hover{
     body{
         font-size: 13px;
         font-family: Courier, monospace;
-        
+        width: 100%;
     }
     nav{
         height: 40px;
@@ -177,3 +178,73 @@ nav .buy-btn:hover{
         border-radius: 25px;
     }
 } 
+@media (max-width: 420px){
+    body {
+            font-size: 11px;
+            font-family: Courier, monospace;
+            width: 100%;
+        }
+    
+        nav {
+            height: 40px;
+        }
+    
+        nav .logo-nav {
+            height: 33px;
+            width: 33px;
+        }
+    
+        nav li a {
+            display: block;
+            height: 30px;
+            width: 80px;
+            /* background-color: burlywood; */
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            align-content: center;
+            justify-self: center;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+    
+        .qc {
+            aspect-ratio: 4/4;
+            width: 100%;
+            background-repeat: no-repeat;
+        }
+    
+        .carousel-inner {
+            width: 100%;
+        }
+    
+        .item-1,
+        .item-2,
+        .item-3 {
+            width: 100%;
+        }
+    
+        .qc_content {
+            bottom: 10%;
+            left: 45%;
+            width: 210px;
+        }
+    
+        .c_1 {
+            font-size: 14px;
+            padding: 5px 7px 0 7px;
+        }
+    
+        .c_2 {
+            font-size: 14px;
+            padding: 0 10px 5px 10px;
+        }
+    
+        nav .buy-btn {
+            height: 35px;
+            width: 35px;
+            font-size: 30px;
+            color: #ffffff;
+            border-radius: 25px;
+        }
+}
