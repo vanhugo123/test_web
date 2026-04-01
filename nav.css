@@ -104,10 +104,10 @@ nav .buy-btn:hover{
     width: 480px;
     margin-top: 0;
     color: #ffffff;
-    bottom: 20%;
-    left: 50%;
+    bottom: 14%;
+    left: 58%;
     background-color:rgba(0, 0, 0, 0.75);
-    border-radius: 30px;
+    border-radius: 25px;
     gap: 5px;
 }
 .c_1 {
@@ -117,7 +117,7 @@ nav .buy-btn:hover{
     font-family: Georgia;
 }
 .c_2 {
-    padding: 10px 15px 15px 15px;
+    padding: 0 15px 10px 15px;
     font-size: 30px;
     margin: 0;
 }
@@ -157,18 +157,22 @@ nav .buy-btn:hover{
     .item-1,.item-2,.item-3{
         aspect-ratio: 4/3;
     }
+        .carousel-control-prev,
+        .carousel-control-next {
+            display: none !important;
+        }
     .qc_content{
         bottom: 10%;
-        left: 45%;
-        width: 210px;
+        left: 55%;
+        width: 217px;
     }
     .c_1{
-        font-size: 14px;
+        font-size: 16px;
         padding: 5px 7px 0 7px;
     }
     .c_2{
         font-size: 14px;
-        padding: 0 10px 5px 10px;
+        padding: 0 15px 5px 15px;
     }
     nav .buy-btn {
         height: 35px;
@@ -187,11 +191,13 @@ nav .buy-btn:hover{
     
         nav {
             height: 40px;
+            justify-content: space-between;
         }
     
         nav .logo-nav {
-            height: 33px;
-            width: 33px;
+            height: 30px;
+            width: 30px;
+            margin: 5px;
         }
     
         nav ul{
@@ -235,5 +241,8 @@ nav .buy-btn:hover{
             font-size: 30px;
             color: #ffffff;
             border-radius: 25px;
+        }
+        .carousel-control-prev, .carousel-control-next{
+            display: none !important;
         }
 }
