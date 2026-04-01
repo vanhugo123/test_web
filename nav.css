@@ -194,18 +194,8 @@ nav .buy-btn:hover{
             width: 33px;
         }
     
-        nav li a {
-            display: block;
-            height: 30px;
-            width: 80px;
-            /* background-color: burlywood; */
-            text-decoration: none;
-            color: rgb(255, 255, 255);
-            text-align: center;
-            align-content: center;
-            justify-self: center;
-            border-radius: 5px;
-            font-size: 12px;
+        nav ul {
+            display: none;
         }
     
         .qc {
