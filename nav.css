@@ -1,0 +1,178 @@
+
+html{
+    background-color: rgb(248, 215, 174);
+}
+body.container{
+    font-family: Courier, monospace;
+    max-width: 1500px;
+    padding: 0;
+
+}
+nav{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+    height: 60px;
+    background-color: #ab3915;
+
+}
+nav .logo-nav{
+    background-image: url(img/logo_brand.png);
+    height: 44px;
+    width: 44px;
+    border: 0.01px solid #ffffff;
+    border-radius: 18px;
+    background-size: cover;
+    background-position: center;
+}
+nav ul{
+    display: flex;
+    justify-content:center;
+    padding: 0;
+    gap: 5px;
+    margin: 0;
+}
+nav li{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+nav li a{
+    display: block;
+    height: 40px;
+    width: 180px;
+    /* background-color: burlywood; */
+    text-decoration: none;
+    color:#ffffff;
+    font-weight: 600;
+    text-align: center;
+    align-content: center;
+    justify-self: center;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+nav a:hover{
+    background-color: #f6965393;
+    color: rgb(255, 221, 0);
+    border-radius: 20px;
+}
+
+nav .buy-btn {
+    height: 52px;
+    width: 52px;
+    font-size: 40px;
+    color: #ffffff;
+    border-radius: 25px;
+}
+nav .buy-btn:hover{
+    background-color: #f6965393;
+}
+.qc{
+    position: relative;
+    display: block;
+    aspect-ratio: 15/7.5;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+.carousel-inner{
+    aspect-ratio: 15/7.5;
+}
+.item-1,.item-2,.item-3{
+    aspect-ratio: 15/7.5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.item-1{
+    background-image: url(img/canh_hien_nha_ngam_ho_ca.jpg);
+}
+.item-2{
+    background-image: url(img/truc_dien_cho_ngoi_ngam_san.jpg);
+}
+.item-3{
+    background-image: url(img/canh_nha.jpg);
+}
+
+.qc_content{
+    position: absolute;
+    display: block;
+    width: 480px;
+    margin-top: 0;
+    color: #ffffff;
+    bottom: 20%;
+    left: 50%;
+    background-color:rgba(0, 0, 0, 0.75);
+    border-radius: 30px;
+    gap: 5px;
+}
+.c_1 {
+    padding: 10px 0 0 0;
+    font-size: 40px;
+    margin: 0;
+    font-family: Georgia;
+}
+.c_2 {
+    padding: 10px 15px 15px 15px;
+    font-size: 30px;
+    margin: 0;
+}
+@media (max-width: 760px) {
+    body{
+        font-size: 13px;
+        font-family: Courier, monospace;
+        
+    }
+    nav{
+        height: 40px;
+    }
+    nav .logo-nav{
+        height: 33px;
+        width: 33px;
+    }
+    nav li a {
+        display: block;
+        height: 30px;
+        width: 80px;
+        /* background-color: burlywood; */
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        align-content: center;
+        justify-self: center;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+    .qc{
+        aspect-ratio: 4/3;
+        background-repeat: no-repeat;
+    }
+    .carousel-inner {
+        aspect-ratio: 4/3;
+    }
+    .item-1,.item-2,.item-3{
+        aspect-ratio: 4/3;
+    }
+    .qc_content{
+        bottom: 10%;
+        left: 45%;
+        width: 210px;
+    }
+    .c_1{
+        font-size: 14px;
+        padding: 5px 7px 0 7px;
+    }
+    .c_2{
+        font-size: 14px;
+        padding: 0 10px 5px 10px;
+    }
+    nav .buy-btn {
+        height: 35px;
+        width: 35px;
+        font-size: 30px;
+        color: #ffffff;
+        border-radius: 25px;
+    }
+} 
