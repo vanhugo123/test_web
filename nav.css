@@ -194,12 +194,11 @@ nav .buy-btn:hover{
             width: 33px;
         }
     
-        nav ul {
+        nav ul{
             display: none;
         }
     
         .qc {
-            aspect-ratio: 4/4;
             width: 100%;
             background-repeat: no-repeat;
         }
@@ -216,7 +215,7 @@ nav .buy-btn:hover{
     
         .qc_content {
             bottom: 10%;
-            left: 45%;
+            left: 40%;
             width: 210px;
         }
     
