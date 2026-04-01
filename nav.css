@@ -20,7 +20,7 @@ nav{
 
 }
 nav .logo-nav{
-    background-image: url(/thanh_phan_ZenLife/img/logo_brand.png);
+    background-image: url(img/logo_brand.png);
     height: 44px;
     width: 44px;
     border: 0.01px solid #ffffff;
@@ -89,13 +89,13 @@ nav .buy-btn:hover{
 }
 
 .item-1{
-    background-image: url(/thanh_phan_ZenLife/img/canh_hien_nha_ngam_ho_ca.jpg);
+    background-image: url(img/canh_hien_nha_ngam_ho_ca.jpg);
 }
 .item-2{
-    background-image: url(/thanh_phan_ZenLife/img/truc_dien_cho_ngoi_ngam_san.jpg);
+    background-image: url(img/truc_dien_cho_ngoi_ngam_san.jpg);
 }
 .item-3{
-    background-image: url(/thanh_phan_ZenLife/img/canh_nha.jpg);
+    background-image: url(img/canh_nha.jpg);
 }
 
 .qc_content{
