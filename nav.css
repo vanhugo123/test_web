@@ -1,6 +1,7 @@
 
 html{
     background-color: rgb(248, 215, 174);
+    margin: auto;
 }
 body.container{
     font-family: Courier, monospace;
