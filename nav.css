@@ -40,7 +40,7 @@ nav {
 }
 
 nav div.logo-nav {
-    background-image: url(/thanh_phan_ZenLife/img/logo_brand.png);
+    background-image: url(img/logo_brand.png);
     height: 44px;
     width: 44px;
     margin-left: 17px;
@@ -116,7 +116,7 @@ nav .buy-btn:hover {
     position: relative;
     background-repeat: none;
     background-size: cover;
-    background-image: url(/thanh_phan_ZenLife/img/canh_hien_nha_ngam_ho_ca.jpg);
+    background-image: url(img/canh_hien_nha_ngam_ho_ca.jpg);
     height: 650px;
     background-position: 50% 50%;
 }
