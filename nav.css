@@ -299,7 +299,7 @@ nav .buy-btn:hover {
         font-size: 14px;
     }
     nav {
-        height: 40px;
+        height: 60px;
     }
 
     nav .logo-nav {
@@ -336,14 +336,20 @@ nav .buy-btn:hover {
         .btn.btn-nav-dropdown {
             display: block;
             color: #ffffff;
+            font-size: 30px;
+            margin-right: 10px;
         }
             .btn.btn-nav-dropdown:hover {
                 display: block;
                 color: var(--text);
             }
-    
+            ul.dropdown-menu{
+                width: 300px;
+                height: 240px;
+            }
             .dropdown-item {
-                font-size: 12px;
+                font-size: 20px;
+                height: 40px;
             }
     
             li .cart {
@@ -353,7 +359,7 @@ nav .buy-btn:hover {
             }
     
             li .cart .bi-cart4 {
-                font-size: 20px;
+                font-size: 30px;
             }
     /* banner */
         .content {
@@ -381,12 +387,14 @@ nav .buy-btn:hover {
             display: block;
         }
         .s1-content p{
-            font-size: 14px;
+            font-size: 19px;
         }
         .s2{
             display: block;
-            position: sticky;
             z-index: 0;
+        }
+        .s3{
+            width: 90%;
         }
 }
 @media (max-width: 420px) {
