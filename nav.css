@@ -124,14 +124,14 @@ nav .buy-btn:hover {
     margin-top: 10px;
     position: absolute;
     width: 420px;
-    bottom: 20%;
-    right: 5%;
+    bottom: 24%;
+    right: 7%;
+    max-height: max-content;
     color: white;
     background-color: #0000003e;
     padding: 20px 30px;
     border-radius: 30px;
     box-shadow: 5px 5px 10px #00000091;
-    height: max-content;
 }
 .content h3{
     font-size: 45px;
@@ -284,7 +284,7 @@ nav .buy-btn:hover {
     background-size: cover;
     background-repeat: no-repeat;
 }
-@media (max-width: 760px) {
+@media (max-width: 1024px) {
     body {
         font-family: Courier, monospace;
         width: 100%;
@@ -296,7 +296,7 @@ nav .buy-btn:hover {
     }
     p {
         font-family: var(--font-text);
-        font-size: 13px;
+        font-size: 14px;
     }
     nav {
         height: 40px;
@@ -305,6 +305,10 @@ nav .buy-btn:hover {
     nav .logo-nav {
         height: 33px;
         width: 33px;
+    }
+
+    nav ul{
+        display: none;
     }
 
     nav li a {
@@ -321,6 +325,7 @@ nav .buy-btn:hover {
         font-size: 12px;
     }
         nav .buy-btn {
+            display: none;
             height: 35px;
             width: 35px;
             font-size: 30px;
@@ -329,14 +334,33 @@ nav .buy-btn:hover {
         }
     
         .btn.btn-nav-dropdown {
-            display: none;
+            display: block;
+            color: #ffffff;
         }
+            .btn.btn-nav-dropdown:hover {
+                display: block;
+                color: var(--text);
+            }
+    
+            .dropdown-item {
+                font-size: 12px;
+            }
+    
+            li .cart {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+    
+            li .cart .bi-cart4 {
+                font-size: 20px;
+            }
     /* banner */
         .content {
             margin-top: 10px;
             position: absolute;
             width: 400px;
-            top: 30px;
+            top: 19%px;
             right: 1%;
             color: white;
             background-color: #0000003e;
@@ -344,6 +368,7 @@ nav .buy-btn:hover {
             border-radius: 30px;
             box-shadow: 5px 5px 10px #00000091;
             scale: 0.8;
+            height: max-content;
         }
         /* s1 */
         .s1{
