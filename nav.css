@@ -131,6 +131,7 @@ nav .buy-btn:hover {
     padding: 20px 30px;
     border-radius: 30px;
     box-shadow: 5px 5px 10px #00000091;
+    height: max-content;
 }
 .content h3{
     font-size: 45px;
