@@ -382,6 +382,7 @@ nav .buy-btn:hover {
             height: 300px;
             max-height: 800px;
             z-index: 0;
+            justify-items: center;
         }
         .khung1{
             display: block;
