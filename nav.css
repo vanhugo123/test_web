@@ -26,7 +26,7 @@ h1,h2,h3,h4,h5{
 }
 p{
     font-family: Montserrat;
-    font-size: 16px;
+    font-size: 1.2rem;
     margin: 0.7rem 0;
 }
 /* nav */
@@ -163,12 +163,12 @@ nav .buy-btn:hover {
 .khung1{
     position: absolute;
     display: flex;
-    padding: 18px 22px 45px 12px;
+    padding: 18px 12px 45px 12px;
     border-radius: 20px;
     box-shadow: 3px 5px 15px #2b2b2b39;
     transform: translateY(-70px);
     scale: 0.95;
-    gap: 15px;
+    gap: 7px;
     background-color: var(--beige);
 }
 .air, .enjoy{
@@ -182,15 +182,17 @@ nav .buy-btn:hover {
 }
 .s1-content{
     flex: 1;
+    scale: 0.98;
 }
 .s1-tittle, .s3-tittle{
-    flex: 0.35;
+    flex: 0.3;
     align-content: center;
     text-align: center;
 }
 .s1-tittle p, .s3-tittle p{
+    flex: 0.75;
     margin: 0;
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 .s1-tittle h3, .s3-tittle h3{
     font-weight: 900;
@@ -205,13 +207,13 @@ nav .buy-btn:hover {
 }
 .s1-content h4{
     font-weight: 700;
-    height: 40px;
-    font-size: 20px;
+    height: 2rem;
+    font-size: 1.1rem;
     margin: 0;
 }
 .s1-content p, .s3-content p{
     margin: 0;
-    font-size: 16px;
+    font-size: 1.1rem;
     height: 60px;
     color: var(--text);
 }
@@ -232,20 +234,25 @@ nav .buy-btn:hover {
     align-items: center;
     border-radius: 20px;
     color: var(--beige);
+    flex-wrap: wrap;
 }
 .s2-content{
     flex: 1;
     text-align: center;
+    height: 25vh;
+    padding-top: 5px;
 }
 .s2-content i{
-    height: 55px;
+    height: 30%;
     font-size: 55px;
 }
 .s2-content p{
+    height: 60%;
     margin: 0;
+    padding-top: 15px;
 }
 .s3{
-    margin: 30px auto;
+    margin: 40px auto;
     width: 70%;
 }
 .s3-content{
@@ -256,7 +263,7 @@ nav .buy-btn:hover {
     gap: 10px;
 }
 .s3-content-words{
-    height: 180px;
+    height: 280px;
     background-color: var(--card);
     display: flex;
     justify-items: center;
@@ -265,7 +272,7 @@ nav .buy-btn:hover {
     border-radius: 20px;
 }
 .s3-content-words p{
-    width: 45%;
+    width: 43%;
     margin: 0;
     padding: 0 15px 0 15px;
     height: 140px;
@@ -277,12 +284,13 @@ nav .buy-btn:hover {
     font-size: 18px;
 }
 .s3-content-words img{
-    width: 55%;
-    height: 180px;
+    width: 57%;
+    height: 280px;
     border-radius: 20px;
     border: 0.1 solid black;
     background-size: cover;
     background-repeat: no-repeat;
+    background-image: url(img/bat_thang_da.jpg);
 }
 @media (max-width: 1024px) {
     body {
@@ -324,79 +332,108 @@ nav .buy-btn:hover {
         border-radius: 5px;
         font-size: 12px;
     }
-        nav .buy-btn {
-            display: none;
-            height: 35px;
-            width: 35px;
-            font-size: 30px;
-            color: #ffffff;
-            border-radius: 25px;
-        }
-    
-        .btn.btn-nav-dropdown {
+    nav .buy-btn {
+        display: none;
+        height: 35px;
+        width: 35px;
+        font-size: 30px;
+        color: #ffffff;
+        border-radius: 25px;
+    }
+
+    .btn.btn-nav-dropdown {
+        display: block;
+        color: #ffffff;
+        font-size: 30px;
+        margin-right: 10px;
+    }
+        .btn.btn-nav-dropdown:hover {
             display: block;
-            color: #ffffff;
-            font-size: 30px;
-            margin-right: 10px;
+            color: var(--text);
         }
-            .btn.btn-nav-dropdown:hover {
-                display: block;
-                color: var(--text);
-            }
-            ul.dropdown-menu{
-                width: 300px;
-                height: 240px;
-            }
-            .dropdown-item {
-                font-size: 20px;
-                height: 40px;
-            }
-    
-            li .cart {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
-    
-            li .cart .bi-cart4 {
-                font-size: 30px;
-            }
+        ul.dropdown-menu{
+            width: 300px;
+            height: 240px;
+        }
+        .dropdown-item {
+            font-size: 20px;
+            height: 40px;
+        }
+
+        li .cart {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        li .cart .bi-cart4 {
+            font-size: 30px;
+        }
     /* banner */
-        .content {
-            margin-top: 10px;
-            position: absolute;
-            width: 400px;
-            top: 19%px;
-            right: 1%;
-            color: white;
-            background-color: #0000003e;
-            padding: 10px 30px;
-            border-radius: 30px;
-            box-shadow: 5px 5px 10px #00000091;
-            scale: 0.8;
-            height: max-content;
-        }
-        /* s1 */
-        .s1{
-            position: sticky;
-            height: 300px;
-            max-height: 800px;
-            z-index: 0;
-            justify-items: center;
-        }
-        .khung1{
-            display: block;
-        }
-        .s1-content p{
-            font-size: 19px;
-        }
-        .s2{
-            display: block;
-            z-index: 0;
-        }
-        .s3{
-            width: 90%;
-        }
+    .content {
+        margin-top: 10px;
+        position: absolute;
+        width: 400px;
+        bottom: 10%px;
+        right: 1px;
+        color: white;
+        background-color: #0000003e;
+        padding: 10px 30px;
+        border-radius: 30px;
+        box-shadow: 5px 5px 10px #00000091;
+        scale: 0.8;
+        height: max-content;
+    }
+    /* s1 */
+    .s1{
+        position: sticky;
+        height: 305px;
+        max-height: 800px;
+        z-index: 0;
+        justify-items: center;
+    }
+    .khung1{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .s1-content{
+        scale: 0.98;
+    }
+    .s1-content p{
+        font-size: 19px;
+    }
+    .s2{
+        display: block;
+        z-index: 0;
+    }
+    .khung2{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        align-content: center;
+    }
+    .khung2 hr{
+        color: #dac5c5;
+        height: 1px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .s2-content{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    .s2-content p{
+        margin: 0;
+        font-size: 19px;
+        text-align: left;
+        padding: 0;
+    }
+    .s3{
+        width: 90%;
+    }
+   
 }
 @media (max-width: 420px) {
     body {
