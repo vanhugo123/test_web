@@ -20,12 +20,12 @@ body{
     background-color: var(--beige) !important;
 }
 h1,h2,h3,h4,h5{
-    font-family: Merriweather;
+    font-family: var(--font-header);
     font-weight: 800;
     margin: 0.5rem 0 0 0;
 }
 p{
-    font-family: Montserrat;
+    font-family: var(--font-text);
     font-size: 1.2rem;
     margin: 0.7rem 0;
 }
@@ -35,17 +35,17 @@ nav {
     justify-items: center;
     align-items: center;
     justify-content: space-between;
-    height: 60px;
+    height: 100px;
     background-color:var(--brown);
 }
 
 nav div.logo-nav {
     background-image: url(img/logo_brand.png);
-    height: 44px;
-    width: 44px;
+    height: 80px;
+    width: 80px;
     margin-left: 17px;
     border: 0.01px solid #ffffff;
-    border-radius: 18px;
+    border-radius: 27px;
     background-size: cover;
     background-position: center;
     cursor:pointer;
@@ -67,7 +67,7 @@ nav li {
 
 nav li a {
     display: block;
-    height: 40px;
+    height: 60px;
     width: 140px;
     /* background-color: burlywood; */
     text-decoration: none;
@@ -75,7 +75,7 @@ nav li a {
     font-weight: 600;
     text-align: center;
     align-items: center;
-    justify-content: center;
+    align-content: center;
     border-radius: 10px;
     font-size: 25px;
 }
@@ -83,11 +83,11 @@ nav li a {
 nav a:hover, nav div.logo-nav:hover {
     background-color: #eaaf5693;
     color: var(--text);
-    border-radius: 18px;
+    border-radius: 27px;
 }
 
 nav .buy-btn {
-    height: 45px;
+    height: 60px;
     width: 190px;
     font-size: 38px;
     color: #ffffff;
@@ -108,6 +108,7 @@ nav .buy-btn p{
 nav .buy-btn:hover {
     background-color: #f6965393;
     color: rgb(255, 221, 0);
+    cursor: pointer;
 }
 .btn.btn-nav-dropdown {
     display: none;
@@ -159,6 +160,7 @@ nav .buy-btn:hover {
     position: relative;
     z-index: 0;
     height: 98px;
+    max-height: 600px;
 }
 .khung1{
     position: absolute;
@@ -235,6 +237,7 @@ nav .buy-btn:hover {
     border-radius: 20px;
     color: var(--beige);
     flex-wrap: wrap;
+    height: max-content;
 }
 .s2-content{
     flex: 1;
@@ -304,10 +307,10 @@ nav .buy-btn:hover {
     }
     p {
         font-family: var(--font-text);
-        font-size: 14px;
+        font-size: 1rem;
     }
     nav {
-        height: 60px;
+        height: 100px;
     }
 
     nav .logo-nav {
@@ -388,7 +391,7 @@ nav .buy-btn:hover {
     .s1{
         position: sticky;
         height: 305px;
-        max-height: 800px;
+        max-height: 500px;
         z-index: 0;
         justify-items: center;
     }
@@ -400,12 +403,16 @@ nav .buy-btn:hover {
     .s1-content{
         scale: 0.98;
     }
+    .s1-content h4{
+        font-size: 1.2rem;
+    }
     .s1-content p{
-        font-size: 19px;
+        font-size: 1.2rem;
     }
     .s2{
         display: block;
         z-index: 0;
+        height: max-content;
     }
     .khung2{
         display: flex;
@@ -426,7 +433,7 @@ nav .buy-btn:hover {
     }
     .s2-content p{
         margin: 0;
-        font-size: 19px;
+        font-size: 1rem;
         text-align: left;
         padding: 0;
     }
