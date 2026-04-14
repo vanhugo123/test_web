@@ -1,12 +1,13 @@
 :root{
     --brown: #b4590f;
-    --brown-dark: #7B4F2C;
+    --brown-dark: #5a2d09ed;
     --beige: #f7f2e7;
     --green: #A3B18A;
     --text: #2B2B2B;
     --font-text: Montserrat;
     --font-header: Merriweather;
-    --card: #d7b293;
+    --font-nav: Courier;
+    --card: #d9b99c;
 }
 
 html{
@@ -24,9 +25,9 @@ h1,h2,h3,h4,h5{
     font-weight: 800;
     margin: 0.5rem 0 0 0;
 }
-p{
+p, strong{
     font-family: var(--font-text);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin: 0.7rem 0;
 }
 /* nav */
@@ -40,7 +41,7 @@ nav {
 }
 
 nav div.logo-nav {
-    background-image: url(img/logo_brand.png);
+    background-image: url(logo_brand.png);
     height: 80px;
     width: 80px;
     margin-left: 17px;
@@ -68,7 +69,7 @@ nav li {
 nav li a {
     display: block;
     height: 60px;
-    width: 140px;
+    width: 150px;
     /* background-color: burlywood; */
     text-decoration: none;
     color: #ffffff;
@@ -78,6 +79,7 @@ nav li a {
     align-content: center;
     border-radius: 10px;
     font-size: 25px;
+    font-family: var(--font-text);
 }
 
 nav a:hover, nav div.logo-nav:hover {
@@ -95,7 +97,6 @@ nav .buy-btn {
     border-radius: 25px;
     display: flex;
     justify-content: space-around;
-    gap: 10px;
 }
 nav .buy-btn i{
     align-content: center;
@@ -120,11 +121,12 @@ nav .buy-btn:hover {
     background-image: url(img/canh_hien_nha_ngam_ho_ca.jpg);
     height: 650px;
     background-position: 50% 50%;
+    box-sizing: content-box;
 }
 .content{
     margin-top: 10px;
     position: absolute;
-    width: 420px;
+    width: 20rem;
     bottom: 24%;
     right: 7%;
     max-height: max-content;
@@ -159,8 +161,8 @@ nav .buy-btn:hover {
 .s1{
     position: relative;
     z-index: 0;
-    height: 98px;
-    max-height: 600px;
+    min-height: 9rem;
+    max-height: 32rem;
 }
 .khung1{
     position: absolute;
@@ -171,6 +173,7 @@ nav .buy-btn:hover {
     transform: translateY(-70px);
     scale: 0.95;
     gap: 7px;
+    height: 15rem;
     background-color: var(--beige);
 }
 .air, .enjoy{
@@ -179,26 +182,28 @@ nav .buy-btn:hover {
     background-color: whitesmoke;
     border-radius: 30px;
     padding: 0 4px 0 0;
+    height: 100%;
     margin: 2px;
     box-shadow: 0 5px 15px #03030333;
 }
 .s1-content{
     flex: 1;
-    scale: 0.98;
+    padding: 10px 0;
 }
-.s1-tittle, .s3-tittle{
+.s1-tittle, .s3-tittle, .s4-tittle{
     flex: 0.3;
     align-content: center;
     text-align: center;
 }
-.s1-tittle p, .s3-tittle p{
+.s1-tittle p, .s3-tittle p, .s4-tittle p{
     flex: 0.75;
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
-.s1-tittle h3, .s3-tittle h3{
+.s1-tittle h3, .s3-tittle h3, .s4-tittle h3{
     font-weight: 900;
     color: var(--text);
+    font-size: 2rem;
 }
 .s1-content img{
     height: 130px;
@@ -209,21 +214,23 @@ nav .buy-btn:hover {
 }
 .s1-content h4{
     font-weight: 700;
-    height: 2rem;
-    font-size: 1.1rem;
+    height: 30%;
+    font-size: 1.5rem;
     margin: 0;
+    align-content: center;
 }
-.s1-content p, .s3-content p{
+.s1-content p, .s3-content p, .s4-content p{
     margin: 0;
-    font-size: 1.1rem;
-    height: 60px;
+    font-size: 1.4rem;
+    height: 70%;
     color: var(--text);
+    align-content: center;
 }
 
 .s2{
     position: relative;
     z-index: 1;
-    
+    margin: auto;
 }
 .khung2{
     width: 98%;
@@ -231,32 +238,33 @@ nav .buy-btn:hover {
     background-color: var(--brown);
     display: flex;
     padding: 15px;
-    gap: 10px;
+    min-height: 17.5rem;
+    max-height: 40rem;
+    gap: 15px;
     justify-content: center;
-    align-items: center;
     border-radius: 20px;
     color: var(--beige);
-    flex-wrap: wrap;
-    height: max-content;
 }
 .s2-content{
     flex: 1;
     text-align: center;
-    height: 25vh;
+    height: auto;
     padding-top: 5px;
+    align-content: space-between;
 }
 .s2-content i{
-    height: 30%;
     font-size: 55px;
 }
 .s2-content p{
     height: 60%;
     margin: 0;
     padding-top: 15px;
+    text-align: justify;
 }
 .s3{
-    margin: 40px auto;
-    width: 70%;
+    margin: auto;
+    margin-top: 3rem;
+    width: 80%;
 }
 .s3-content{
     width: 100%;
@@ -266,7 +274,7 @@ nav .buy-btn:hover {
     gap: 10px;
 }
 .s3-content-words{
-    height: 280px;
+    height: 25rem;
     background-color: var(--card);
     display: flex;
     justify-items: center;
@@ -278,22 +286,102 @@ nav .buy-btn:hover {
     width: 43%;
     margin: 0;
     padding: 0 15px 0 15px;
-    height: 140px;
+    height: 19rem;
     align-content: center;
+    font-style: oblique;
 }
 .s3-content-words p strong{
     font-family: var(--font-header);
-    font-weight: 700;
-    font-size: 18px;
+    font-weight: 800;
+    font-size: 26px;
+    font-style: normal;
+}
+
+.s3-content a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 550;
+    font-style: normal;
+}
+.s3-content a:hover{
+    color: var(--beige);
 }
 .s3-content-words img{
     width: 57%;
-    height: 280px;
+    height: 25rem;
     border-radius: 20px;
     border: 0.1 solid black;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(img/bat_thang_da.jpg);
+}
+.s4{
+    margin: 1rem 0;
+    width: 100%;
+    background-color: var(--brown);
+    padding: 1rem 0;
+    border-radius: 20px;
+    height: auto;
+}
+.khung4{
+    align-items: center;
+    justify-items: center;
+    height: auto;
+}
+.s4-tittle{
+    padding: 1rem;
+}
+.s4-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+    height: auto;
+}
+.s4-content-item{
+    display: flex;
+    flex-direction: row;
+    min-width: 44rem;
+    max-width: 50rem;
+    padding: 5px;
+    height: auto;
+    background-color: var(--beige);
+    border-radius: 20px;
+    align-items: center;
+}
+.s4-content-item p{
+    flex: 0.35;
+    font-size: 1rem;
+    justify-items: space-between;
+    min-height: 10rem;
+    align-content: center;
+    text-align: center;
+}
+.s4-content-item p strong {
+    font-family: var(--font-header);
+    font-weight: 800;
+    font-size: 1.3rem;
+    font-style: normal;
+    color: var(--brown-dark);
+}
+.s4-content-item a{
+    text-decoration: none;
+    color: var(--beige);
+    background-color: var(--brown);
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.s4-content-item a:hover{
+    background-color: var(--brown-dark);
+}
+.s4-content-item img{
+    flex: 0.65;
+    min-height: 18rem;
+    border-radius: 17px;
+    background-image: url(img/canh_phong_tho_thien_ban_dem.jpg);
+    background-size: cover;
 }
 @media (max-width: 1024px) {
     body {
@@ -348,22 +436,23 @@ nav .buy-btn:hover {
         display: block;
         color: #ffffff;
         font-size: 30px;
-        margin-right: 10px;
+        margin-right: 35px;
     }
         .btn.btn-nav-dropdown:hover {
             display: block;
             color: var(--text);
         }
         ul.dropdown-menu{
-            width: 300px;
-            height: 240px;
+            width: 350px;
         }
-        .dropdown-item {
-            font-size: 20px;
-            height: 40px;
+        li a.nav-item{
+            align-items: center;
+            align-content: center;
+            font-size: 30px;
+            font-weight: 550 !important;
+            height: 50px;
         }
-
-        li .cart {
+        li a.cart{
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -390,8 +479,8 @@ nav .buy-btn:hover {
     /* s1 */
     .s1{
         position: sticky;
-        height: 305px;
-        max-height: 500px;
+        min-height: 23rem;
+        max-height: 25rem;
         z-index: 0;
         justify-items: center;
     }
@@ -399,26 +488,29 @@ nav .buy-btn:hover {
         display: flex;
         flex-direction: column;
         gap: 5px;
+        height: auto;
     }
     .s1-content{
         scale: 0.98;
     }
     .s1-content h4{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     .s1-content p{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     .s2{
         display: block;
         z-index: 0;
-        height: max-content;
+        min-height: 30rem;
+        max-height: 40rem;
     }
     .khung2{
         display: flex;
         flex-direction: column;
         align-items: start;
         align-content: center;
+        height: auto;
     }
     .khung2 hr{
         color: #dac5c5;
@@ -433,13 +525,28 @@ nav .buy-btn:hover {
     }
     .s2-content p{
         margin: 0;
-        font-size: 1rem;
+        font-size: 1.4rem;
         text-align: left;
         padding: 0;
     }
     .s3{
         width: 90%;
     }
+    .s3-content p {
+        height: 280px;
+        font-style: oblique;
+    }
+        .s3-content p strong{
+            font-weight: 800;
+            font-size: 26px;
+            font-style: normal;
+        }
+        .s3-content a{
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 550;
+            font-style: normal;
+        }
    
 }
 @media (max-width: 420px) {
@@ -479,7 +586,7 @@ nav .buy-btn:hover {
             color: var(--text);
         }
                 .dropdown-item {
-                    font-size: 12px;
+                    font-size: 25px;
                 }
                 li .cart {
                     display: flex;
@@ -487,8 +594,15 @@ nav .buy-btn:hover {
                     align-items: center;
                 }
                 li .cart .bi-cart4{
-                    font-size: 20px;
+                    font-size: 25px;
                 }
-                
+        .s3 {
+            width: 90%;
+        }
+    
+        .s3-content  {
+            align-content: center;
+            text-align: center;
+        }
 
 }
