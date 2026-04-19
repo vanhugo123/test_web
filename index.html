@@ -1,686 +1,288 @@
-:root{
-    --brown: #b4590f;
-    --brown-dark: #5a2d09ed;
-    --beige: #f7f2e7;
-    --green: #A3B18A;
-    --text: #2B2B2B;
-    --font-text: Montserrat;
-    --font-header: Merriweather;
-    --font-nav: Courier;
-    --card: #d9b99c;
-}
+<html>
+    <head>
+        <link rel="stylesheet" href="nav.css">
 
-html{
-    background-color: var(--beige);
-}
-body{
-    margin: 0 auto !important;
-    padding: 0;
-    max-width: 1500px;
-    color: var(--text);
-    background-color: var(--beige) !important;
-}
-h1,h2,h3,h4,h5{
-    font-family: var(--font-header);
-    font-weight: 800;
-    margin: 0.5rem 0 0 0;
-}
-p, strong{
-    font-family: var(--font-text);
-    font-size: 1.5rem;
-    margin: 0.7rem 0;
-}
-/* nav */
-nav {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    justify-content: space-between;
-    height: 100px;
-    background-color:var(--brown);
-}
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
 
-    nav div.logo-nav {
-        background-image: url(img/logo_brand.png);
-        height: 80px;
-        width: 80px;
-        margin-left: 17px;
-        border: 0.01px solid #ffffff;
-        border-radius: 27px;
-        background-size: cover;
-        background-position: center;
-        cursor:pointer;
-    }
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-    nav ul {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        gap: 5px;
-        margin: 0;
-    }
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-    nav li {
-        margin: 0;
-        padding: 0;
-        display: block;
-    }
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-    nav li a {
-        display: block;
-        height: 60px;
-        width: 150px;
-        /* background-color: burlywood; */
-        text-decoration: none;
-        color: #ffffff;
-        font-weight: 600;
-        text-align: center;
-        align-items: center;
-        align-content: center;
-        border-radius: 10px;
-        font-size: 25px;
-        font-family: var(--font-header);
-    }
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo-nav">
+                    <a href="#home"></a>
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="/thanh_phan_ZenLife/zenLife_introduce.html">Giới thiệu</a></li>
+                    <li><a href="/thanh_phan_ZenLife/zenLife_service.html">Dịch vụ</a></li>
+                    <li><a href="/thanh_phan_ZenLife/zenLife_contact.html">Liên lạc</a></li>
+                </ul>
+                <div class="buy-btn">
+                    <i class="bi bi-cart4"></i><p>Đặt phòng</p>
+                </div>
 
-    nav a:hover, nav div.logo-nav:hover {
-        background-color: #eaaf5693;
-        color: var(--text);
-        border-radius: 27px;
-    }
+                <button type="button" class="btn btn-sm dropdown-toggle btn-nav-dropdown" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item nav-item" href="#">Home</a></li>
+                    <li><a class="dropdown-item nav-item" href="/thanh_phan_ZenLife/zenLife_introduce.html">Giới thiệu</a></li>
+                    <li><a class="dropdown-item nav-item" href="/thanh_phan_ZenLife/zenLife_service.html">Dịch vụ</a></li>
+                    <li><a class="dropdown-item nav-item" href="/thanh_phan_ZenLife/zenLife_contact.html">Liên lạc</a></li>
+                    <li><hr class="dropdown-divider nav-item"></li>
+                    <li><a class="dropdown-item nav-item cart" href="#">Đặt phòng<i class="bi bi-cart4"></i></a></li>
+                </ul>
+            </nav>
+            <div class="poster">
+                <div class="galaxy"></div>
+                <div class="content">
+                    <h3 class="brand-name">Zen Life</h3>
+                    <p>Một chạm vạn an nhiên.</p><br>
+                    <button class="dang_ky">
+                        <strong>Đặt phòng</strong>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div>
+            <section class="s1" title="Tại sao chọn Zen Life">
+                <div class="khung1">
+                    <div class="s1-tittle">
+                        <h4>Tại sao chọn</h4>
+                        <h3>Zen Life ?</h3>
+                    </div>
+                    <div class="s1-content air">
+                        <img alt="">
+                        <div class="s1-content">
+                            <h4>Không gian</h4>
+                            <p>Thiết kế tối giản, vừa hiện đại vừa hài hòa cùng thiên nhiên mang lại cảm giác thư thái.</p>
+                        </div>
+                    </div>
+                    <div class="s1-content enjoy">
+                        <img alt="">
+                        <div class="s1-content">
+                            <h4>Tận hưởng</h4>
+                            <p>Không gian trong lành, tiện nghi cùng nhiều trải nghiệm thú vị và độc đáo tại địa phương.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    <!-- Nội dung chính -->
+            <section class="s2" title="Tiện nghi mà Zen Life mang đến cho quý khách hàng">
+                <div class="khung2">
+                    <div class="s2-content">
+                        <i class="bi bi-house-fill"></i>
+                        <p>Sức chứa lên tới 50 người. Gồm có các khu vực: sân rộng rãi,phòng thờ riêng, khu bếp, phòng ngủ và ban công tầng hai thoáng đãng.</p>
+                    </div><hr>
+                    <div class="s2-content">
+                        <i class="bi bi-eye-fill "></i>
+                        <p>Tại Zen Life,nơi bạn có thể chiêm ngưỡng và thả hồn vào khung cảnh tuyệt đẹp của thiên nhiên, kiến trúc nơi đây.</p>
+                    </div><hr>
+                    <div class="s2-content">
+                        <i class="bi bi-wifi"></i>
+                        <p>Wifi mạnh, tốc độ ổn định, thoải mái kết nối nhiều thiết bị cùng lúc.</p>
+                    </div><hr>
+                    
+                    <div class="s2-content">
+                        <i class="fa-solid fa-bed fas"></i>
+                        <p>Không gian phòng ngủ thoáng mát, sạch sẽ, đầy đủ tiện nghi, có nhiều lựa chọn để bạn thoải mái nghỉ ngơi.</p>
+                    </div><hr>
 
-    nav .buy-btn {
-        height: 60px;
-        width: 190px;
-        font-size: 38px;
-        color: #ffffff;
-        margin-right: 10px;
-        border-radius: 25px;
-        display: flex;
-        justify-content: space-around;
-    }
-    nav .buy-btn i{
-        align-content: center;
-    }
-    nav .buy-btn p{
-        margin: 0;
-        text-align: center;
-        align-content: center;
-        font-family: var(--font-header);
-    }
-    nav .buy-btn:hover {
-        background-color: #f6965393;
-        color: rgb(255, 221, 0);
-        cursor: pointer;
-    }
-    .btn.btn-nav-dropdown {
-        display: none;
-    }
-.poster{
-    position: relative;
-    background-repeat: none;
-    background-size: cover;
-    background-image: url(img/canh_hien_nha_ngam_ho_ca.jpg);
-    height: 650px;
-    background-position: 50% 50%;
-    box-sizing: content-box;
-}
-.content{
-    margin-top: 10px;
-    position: absolute;
-    width: 29rem;
-    bottom: 24%;
-    right: 7%;
-    max-height: max-content;
-    color: white;
-    background-color: #0000003e;
-    padding: 20px 30px;
-    border-radius: 30px;
-    border: 0.5px solid #9291913a;
-    box-shadow: 5px 5px 10px #00000091;
-}
-    .content h3{
-        font-size: 45px;
-        font-weight: 800;
-    }
-    .content p{
-        font-family: var(--font-text);
-        font-weight: 600;
-        font-size: 30px;
-        text-align: justify;
-    }
-    .content button.dang_ky{
-        border: 0;
-        padding: 7px 15px;
-        border-radius: 5px;
-        box-shadow: 5px 5px 12px 3px #f5710c2f;
-        background-color: var(--brown);
-        color: var(--beige);
-        font-family: var(--font-text);
+                    <div class="s2-content">
+                        <i class="fa-solid fa-map-pin .fas"></i>
+                        <p>Không gian phòng ngủ thoáng mát, sạch sẽ, đầy đủ tiện nghi, có nhiều lựa chọn để bạn thoải mái nghỉ ngơi.</p>
+                    </div>
+                       
+                </div>
+            </section>
+            <section class="s3" title="Những trải nghiệm do Zen Life mang lại">
+                <div class="khung3">
+                    <div class="s3-tittle">
+                        <h4>Trải nghiệm cùng<h4>
+                        <h3>Zen Life</h3>
+                    </div>
+                    <div class="s3-content">
+                        <div class="s3-content-words">
+                            <p><strong>Đón bình minh</strong><br>Ngắm nhìn bình minh của ngày mới, một khoảng khắc thật thư thái và tràn đầy sức sống giúp ta nạp năng lượng tinh thần cho một ngày dài.
+                                <br>
+                                <br>
+                                <a href="#trai-nghiem-1">Chi tiết -></a>
+                            </p>
+                            <img alt="">
+                        </div>
+                        <div class="s3-content-words">
+                            <img alt="">
+                            <p><strong>Đón bình minh</strong><br>Ngắm nhìn bình minh của ngày mới, một khoảng khắc thật thư thái và tràn đầy sức sống giúp ta nạp năng lượng tinh thần cho một ngày dài.
+                                <br>
+                                <br>
+                                <a href="#trai-nghiem-2">Chi tiết -></a>
+                            </p>
+                        </div>
+                        <div class="s3-content-words">
+                            <p><strong>Đón bình minh</strong><br>Ngắm nhìn bình minh của ngày mới, một khoảng khắc thật thư thái và tràn đầy sức sống giúp ta nạp năng lượng tinh thần cho một ngày dài.
+                                <br>
+                                <br>
+                                <a href="#trai-nghiem-3">Chi tiết -></a>
+                            </p>
+                            <img alt="">
+                        </div>
+                        <div class="s3-content-words">
+                            <img alt="">
+                            <p><strong>Đón bình minh</strong><br>Ngắm nhìn bình minh của ngày mới, một khoảng khắc thật thư thái và tràn đầy sức sống giúp ta nạp năng lượng tinh thần cho một ngày dài.
+                                <br>
+                                <br>
+                                <a href="#trai-nghiem-4">Chi tiết -></a>
+                            </p>
+                        </div>
+                        <div class="s3-content-words">
+                            <p><strong>Đón bình minh</strong><br>Ngắm nhìn bình minh của ngày mới, một khoảng khắc thật thư thái và tràn đầy sức sống giúp ta nạp năng lượng tinh thần cho một ngày dài.
+                                <br>
+                                <br>
+                                <a href="#trai-nghiem-5">Chi tiết -></a>
+                            </p>
+                            <img alt="">
+                        </div>
+                        <div class="s3-content-words">
+                            <img alt="">
+                            <p><strong>Đón bình minh</strong><br>Ngắm nhìn bình minh của ngày mới, một khoảng khắc thật thư thái và tràn đầy sức sống giúp ta nạp năng lượng tinh thần cho một ngày dài.
+                                <br>
+                                <br>
+                                <a href="#trai-nghiem-6">Chi tiết -></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="s4" title="Không gian lưu trú">
+                <div class="khung4">
+                    <div class="s4-tittle">
+                        <h4>Không gian lưu trú tại</h4>
+                        <h3>Zen Life</h3>
+                    </div>
+                    <div class="s4-content">
+                        <div class="s4-content-item">
+                            <p>
+                                <strong>Phòng 2 người</strong><br>
+                                Sức chứa: 2 người <br>
+                                Giá phòng: <br><br>
+                                <a href="/thanh_phan_ZenLife/room#2">Xem chi tiết</a>
+                            </p>
+                            <img alt="Hình ảnh mang tính chất minh họa">
+                        </div>
+                        <div class="s4-content-item">
+                            <p>
+                                <strong>Phòng 4 người</strong><br>
+                                Sức chứa: 4 người <br>
+                                Giá phòng: <br><br>
+                                <a href="/thanh_phan_ZenLife/room#2">Xem chi tiết</a>
+                            </p>
+                            <img alt="Hình ảnh mang tính chất minh họa">
+                        </div>
+                        <div class="s4-content-item">
+                            <p>
+                                <strong>Phòng 6 người</strong><br>
+                                Sức chứa: 6 người <br>
+                                Giá phòng: <br><br>
+                                <a href="/thanh_phan_ZenLife/room#2">Xem chi tiết</a>
+                            </p>
+                            <img alt="Hình ảnh mang tính chất minh họa">
+                        </div>
+                        <div class="s4-content-item">
+                            <p>
+                                <strong>Phòng 8 người</strong><br>
+                                Sức chứa: 8 người <br>
+                                Giá phòng: <br><br>
+                                <a href="/thanh_phan_ZenLife/room#2">Xem chi tiết</a>
+                            </p>
+                            <img alt="Hình ảnh mang tính chất minh họa">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="s5" title="Đánh giá từ khách hàng">
+                <div class="title">
+                    <h4>Đánh giá từ khách hàng</h4>
+                </div>
+                <div id="carouselExampleCaptions" class="carousel slide">
 
-    }
-    .content button.dang_ky:hover{
-    background-color: #cd8143dc;
-}
-.s1{
-    position: relative;
-    z-index: 0;
-    min-height: 9rem;
-    max-height: 32rem;
-}
-    .khung1{
-        position: absolute;
-        display: flex;
-        padding: 18px 12px 45px 12px;
-        border-radius: 20px;
-        box-shadow: 3px 5px 15px #2b2b2b39;
-        transform: translateY(-70px);
-        scale: 0.95;
-        gap: 7px;
-        height: 15.5rem;
-        background-color: var(--beige);
-    }
-    .air, .enjoy{
-        display: flex;
-        align-items: center;
-        background-color: whitesmoke;
-        border-radius: 30px;
-        height: 100%;
-        margin: 2px;
-        box-shadow: 0 5px 15px #03030333;
-    }
-    .s1-content{
-        flex: 1;
-        padding: 7px 7px;
-        text-align: justify;
-    }
-    .s1-tittle, .s3-tittle, .s4-tittle{
-        flex: 0.3;
-        align-content: center;
-        text-align: center;
-    }
-    .s1-tittle p, .s3-tittle p, .s4-tittle p{
-        flex: 0.75;
-        margin: 0;
-        font-size: 2rem;
-    }
-    .s1-tittle h3, .s3-tittle h3, .s4-tittle h3{
-        font-weight: 900;
-        color: var(--text);
-        font-size: 2rem;
-    }
-    .s1-content img{
-        height: 130px;
-        width: 130px;
-        padding: 10px;
-        border-radius: 50%;
-        margin-right: 7px;
-    }
-    .s1-content h4{
-        font-weight: 900;
-        height: 30%;
-        font-size: 1.5rem;
-        margin: 0;
-        align-content: center;
-    }
-    .s1-content p, .s3-content p, .s4-content p{
-        margin: 0;
-        font-size: 1.5rem;
-        height: 70%;
-        color: var(--text);
-        align-content: center;
-    }
-    .s1-content p{
-    font-size: 1.6rem;
-}
-.s2{
-    position: relative;
-    z-index: 1;
-    margin: auto;
-}
-    .khung2{
-        /* width: 98%; */
-        margin: auto;
-        background-color: var(--brown);
-        display: flex;
-        padding: 15px 20px;
-        min-height: 17.5rem;
-        max-height: 40rem;
-        gap: 14px;
-        justify-content: center;
-        /* border-radius: 20px; */
-        color: var(--beige);
-    }
-    .s2-content{
-        flex: 1;
-        text-align: center;
-        height: auto;
-        padding-top: 5px;
-        align-content: space-between;
-    }
-    .s2-content i{
-        font-size: 55px;
-    }
-    .s2-content p{
-        height: 60%;
-        margin: 0;
-        padding-top: 15px;
-        text-align: justify;
-    }
-.s3{
-    margin: auto;
-    margin-top: 3rem;
-    width: 80%;
-}
-    .s3-content{
-        width: 100%;
-        margin-top: 5px;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-    .s3-content-words{
-        height: 25rem;
-        background-color: var(--card);
-        display: flex;
-        justify-items: center;
-        text-align: justify;
-        align-items: center;
-        border-radius: 20px;
-    }
-    .s3-content-words p{
-        width: 43%;
-        margin: 0;
-        padding: 0 15px 0 15px;
-        height: 19rem;
-        align-content: center;
-        font-style: oblique;
-    }
-    .s3-content-words p strong{
-        font-family: var(--font-header);
-        font-weight: 800;
-        font-size: 26px;
-        font-style: normal;
-    }
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
 
-    .s3-content a {
-        text-decoration: none;
-        color: var(--text);
-        font-weight: 550;
-        font-style: normal;
-    }
-    .s3-content a:hover{
-        color: var(--beige);
-    }
-    .s3-content-words img{
-        width: 57%;
-        height: 25rem;
-        border-radius: 20px;
-        border: 0.1 solid black;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url(img/bat_thang_da.jpg);
-    }
-.s4{
-    margin: 1rem 0;
-    width: 100%;
-    background-color: var(--brown);
-    padding: 1.5rem 0;
-    height: auto;
-}
-    .khung4{
-        align-items: center;
-        justify-items: center;
-        height: auto;
-    }
-    .s4-tittle, .s5.title{
-        padding: 1.5rem 1rem;
-    }
-    .s4-tittle h3{
-        color: var(--beige);
-        font-weight: 900;
-    }
-    .s4-tittle h4{
-        color: var(--beige);
-    }
-    .s4-content{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap:1rem;
-        height: auto;
-    }
-    .s4-content-item{
-        display: flex;
-        flex-direction: row;
-        min-width: 41rem;
-        max-width: 50rem;
-        padding: 5px;
-        height: auto;
-        background-color: var(--beige);
-        border-radius: 20px;
-        align-items: center;
-    }
-    .s4-content-item p{
-        flex: 0.35;
-        font-size: 1rem;
-        justify-items: space-between;
-        min-height: 10rem;
-        align-content: center;
-        text-align: center;
-    }
-    .s4-content-item p strong {
-        font-family: var(--font-header);
-        font-weight: 800;
-        font-size: 1.3rem;
-        font-style: normal;
-        color: var(--brown-dark);
-    }
-    .s4-content-item a{
-        text-decoration: none;
-        color: var(--beige);
-        background-color: var(--brown);
-        padding: 5px 20px;
-        border-radius: 10px;
-        font-weight: 500;
-        font-size: 1.1rem;
-    }
-    .s4-content-item a:hover{
-        background-color: var(--brown-dark);
-    }
-    .s4-content-item img{
-        flex: 0.65;
-        min-height: 17rem;
-        border-radius: 17px;
-        background-image: url(img/canh_phong_tho_thien_ban_dem.jpg);
-        background-size: cover;
-    }
-.s5{
-    height: auto;
-}
-.s5 h4{
-    font-weight: 900;
-    text-align: center;
-    font-size: 2rem;
-    padding-top: 2rem;
-    margin: 0;
-}
-.s5 h5{
-    margin: 0;
-    align-content: center;
-    font-weight: 800;
-}
-.s5 .carousel-item{
-    height: 20rem;
-    
-}
-.s5 .carousel-caption{
-    display: flex !important;
-    margin-top: 10px;
-    height: 18rem;
-    background-color:white;
-    border-radius: 20px;
-    box-shadow: 0 5px 10px #2b2b2b1c;
-    align-items: center;
-    gap:15px;
-    padding: 10px;
-}
-.s5 .carousel-caption .customer {
-    flex: 25%;
-    color: var(--text);
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    font-weight: 700;
-    gap: 15px;
-}
-.s5 .carousel-caption .customer img{
-    height: 80px;
-    justify-items: center;
-}
-.s5 p {
-    justify-items: center;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-}
-.s5 .carousel-caption .caption {
-    flex: 75%;
-    text-align: justify;
-    color: var(--text);
-    height: 200px;
-    align-content: center;
-}
-.s5 .carousel-caption .caption .ticked-star{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-    height: 20%;
-}
-.s5 .carousel-caption .caption p{
-    height: 80%;
-}
-@media (max-width: 1024px) {
-    body {
-        font-family: Courier, monospace;
-        width: 100%;
-    }
-    h1,h2,h3,h4,h5 {
-        font-family: Merriweather;
-        font-weight: 800;
-        margin: 0.5rem 0 0 0;
-    }
-    p {
-        font-family: var(--font-text);
-        font-size: 1rem;
-    }
-    nav {
-        height: 100px;
-    }
+                    <div class="carousel-inner">
 
-    nav .logo-nav {
-        height: 33px;
-        width: 33px;
-    }
+                        <div class="carousel-item active">
+                            <div class="carousel-caption d-none d-md-block">
+                                <div class="customer">
+                                    <img src="..." class="d-block" alt="...">
+                                    <h5>Meow con đáng yêu</h5>
+                                </div>
+                                <div class="caption">
+                                    <div class="ticked-star">
+                                        <h5>First slide label</h5>
+                                        <p class="time">3 tháng trước</p>
+                                    </div>
+                                    <p>Gia đình mình đến đây chơi được 2 hôm thôi nhưng cũng cảm thấy khá là thích nơi này, từ phòng ở , phong cảnh cũng như là mọi người ở homestay nè. Một nơi để thư giãn, tịnh tâm rất đáng để trải nghiệm nhen^^~</p>
+                                </div>
+                            </div>
+                        </div>
 
-    nav ul{
-        display: none;
-    }
+                        <div class="carousel-item active">
+                            <div class="carousel-caption d-none d-md-block">
+                                <div class="customer">
+                                    <img src="..." class="d-block" alt="...">
+                                    <h5>Meow con đáng yêu</h5>
+                                </div>
+                                <div class="caption">
+                                    <div class="ticked-star">
+                                        <h5>First slide label</h5>
+                                        <p class="time">3 tháng trước</p>
+                                    </div>
+                                    <p>Gia đình mình đến đây chơi được 2 hôm thôi nhưng cũng cảm thấy khá là thích nơi này, từ phòng ở , phong cảnh cũng như là mọi người ở homestay nè. Một nơi để thư giãn, tịnh tâm rất đáng để trải nghiệm nhen^^~</p>
+                                </div>
+                            </div>
+                        </div>
 
-    nav li a {
-        display: block;
-        height: 30px;
-        width: 80px;
-        /* background-color: burlywood; */
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-        text-align: center;
-        align-content: center;
-        justify-self: center;
-        border-radius: 5px;
-        font-size: 12px;
-    }
-    nav .buy-btn {
-        display: none;
-        height: 35px;
-        width: 35px;
-        font-size: 30px;
-        color: #ffffff;
-        border-radius: 25px;
-    }
+                        <div class="carousel-item active">
+                            <div class="carousel-caption d-none d-md-block">
+                               <div class="customer">
+                                    <img src="..." class="d-block" alt="...">
+                                    <h5>Meow con đáng yêu</h5>
+                                </div>
+                                <div class="caption">
+                                    <div class="ticked-star">
+                                        <h5>First slide label</h5>
+                                        <p class="time">3 tháng trước</p>
+                                    </div>
+                                    <p>Gia đình mình đến đây chơi được 2 hôm thôi nhưng cũng cảm thấy khá là thích nơi này, từ phòng ở , phong cảnh cũng như là mọi người ở homestay nè. Một nơi để thư giãn, tịnh tâm rất đáng để trải nghiệm nhen^^~</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+        </div>
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
-    .btn.btn-nav-dropdown {
-        display: block;
-        color: #ffffff;
-        font-size: 30px;
-        margin-right: 35px;
-    }
-        .btn.btn-nav-dropdown:hover {
-            display: block;
-            color: var(--text);
-        }
-        ul.dropdown-menu{
-            width: 350px;
-        }
-        li a.nav-item{
-            align-items: center;
-            align-content: center;
-            font-size: 30px;
-            font-weight: 550 !important;
-            height: 50px;
-            font-family: var(--font-header);
-        }
-        li a.cart{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    <script src="https://kit.fontawesome.com/3991c51020.js" crossorigin="anonymous"></script>
+    </body>
+</html>
 
-        li .cart .bi-cart4 {
-            font-size: 30px;
-        }
-    /* banner */
-    .content {
-        margin-top: 10px;
-        position: absolute;
-        width: 25rem;
-        bottom: 10%px;
-        right: 1px;
-        color: white;
-        background-color: #0000003e;
-        padding: 10px 30px;
-        border-radius: 30px;
-        box-shadow: 5px 5px 10px #00000091;
-        scale: 0.8;
-        height: max-content;
-    }
-    /* s1 */
-    .s1{
-        position: sticky;
-        min-height: 23rem;
-        max-height: 25rem;
-        z-index: 0;
-        justify-items: center;
-    }
-    .khung1{
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        height: auto;
-    }
-    .s1-content{
-        scale: 0.98;
-    }
-    .s1-content h4{
-        font-size: 1.5rem;
-    }
-    .s1-content p{
-        font-size: 1.5rem;
-    }
-    .s2{
-        display: block;
-        z-index: 0;
-        min-height: 30rem;
-        max-height: 40rem;
-    }
-    .khung2{
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        align-content: center;
-        height: auto;
-    }
-    .khung2 hr{
-        color: #dac5c5;
-        height: 1px;
-        width: 90%;
-        margin: 0 auto;
-    }
-    .s2-content{
-        display: flex;
-        align-items: center;
-        gap: 15px;
-    }
-    .s2-content p{
-        margin: 0;
-        font-size: 1.4rem;
-        text-align: left;
-        padding: 0;
-    }
-    .s3{
-        width: 90%;
-    }
-    .s3-content p {
-        height: 20rem;
-        font-style: oblique;
-        font-size: 1.5rem;
-    }
-        .s3-content p strong{
-            font-weight: 800;
-            font-size: 2rem;
-            font-style: normal;
-        }
-        .s3-content a{
-            text-decoration: none;
-            color: var(--text);
-            font-weight: 550;
-            font-style: normal;
-        }
-   
-}
-@media (max-width: 420px) {
-    body {
-        font-family: Courier, monospace;
-        width: 100%;
-    }
-    p{
-        font-family: var(--font-text);
-        font-size: 13px;
-    }
-    nav {
-        height: 40px;
-        justify-content: space-between;
-    }
-
-        nav .logo-nav {
-            height: 30px;
-            width: 30px;
-            margin: 5px;
-        }
-
-        nav ul {
-            display: none;
-        }
-        nav .buy-btn {
-            display: none;
-        }
-    
-        .btn.btn-nav-dropdown {
-            display: block;
-            color: #ffffff;
-        }
-    
-        .btn.btn-nav-dropdown:hover {
-            display: block;
-            color: var(--text);
-        }
-        .dropdown-item {
-            font-size: 25px;
-        }
-        li .cart {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        li .cart .bi-cart4{
-            font-size: 25px;
-        }
-    .s3 {
-        width: 90%;
-    }
-    .s3-content  {
-        align-content: center;
-        text-align: center;
-    }
-
-
-}
